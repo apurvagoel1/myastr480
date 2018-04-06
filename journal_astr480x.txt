@@ -1,0 +1,38 @@
+Week 1 
+Git, GitHub acc-apurvagoel
+QfitsView, Anaconda pkg 
+Helpful Links
+swcarpentry
+http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html#notebook-document
+
+Report on the scientific paper:
+
+“Remember to think of a paper as a collection of experimental results, summarized as clearly and economically as possible in figures, tables, equations, and schemes. The text in the paper serves just to explain the data, and is secondary. “
+This statement stood out to me, although I knew that the point is to convey the data, but I always thought about papers as data supporting an argument rather than argument supporting the data; but it makes sense—the latter way to think about it would probably encourage bias in research, and that's not what science is about.
+
+
+Create an outline for research docs/think of a doc text as a medium to explaining data.
+WEEK 2
+
+wk of Apr 4th journaling
+
+NOTE apr 30th-may 1st apo viewing window--mark the calender!!!
+
+
+lowell = Observer(longitude = 111.6644444 * u.deg,
+                    latitude =  35.2027778 * u.deg,
+                    elevation = 2210 * u.m,
+                    timezone = 'US/Arizona',
+                    name = "Lowell Observatory"
+                    
+Choosing quasars as objects to observe at Lowell Observtory at Flagstaff,Arizona 
+ryan wanted to take owndership of the class assignment, so on wednesday he was done with the code. I had similar code, and helped tweak some logical things, but it was largely his effort. We basically used the built in astroplan libraries for observability to account for constraints like moon phase and moon separation, airmass, etc. We decided to check the observability on Dec1 and Dec15 and hoped to deduce a trend over the 2 weeks. 
+
+We found data, but it wasn't the right format, and we had some trouble download it as a .csv file, which ryan had preferred to use, so we essentially used google sheets to convert the RA and DEC values into a readable archours/deg format separable by commas. Ryan also suggested we throw out moon separation because at the high values we'd set, it didnt matter. 
+
+We struggled to find meaningful plots since we kept using really unvaried data. Ultimately we chose to  randomize our selection of QSO's from the Large Bright Quasar Survey Catalog accessible at heasarc and tried to find and stick with higher right ascensionsfor more interesting viewing windows. 
+ 
+We found a surprising result, despite most objects being unobservable in the beginning of december, many more were visible over the end of our viewing window. Anyway I will double check this over the weekend, since the due date for the assignment was changed to Monday, as a lot of people in class were lagging behind. JskyView is an excellent quick tool to double check your work. I had a bit of trouble understanding its format so i need to keep practicing till its easy 
+ 
+ This week's lab also introduced me to a lot of astronomy terms which I have only explored through random youtube tutorials and conveniently forgotten. For example, the angles in the celestial sphere are a bit of a messy struggle for me to visualize, so i need to sit and go over it again...although the lab just asked for basic stuff and no calculations using them... so i was able to do it all on my own. 
+_______
