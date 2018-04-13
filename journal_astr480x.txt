@@ -36,3 +36,24 @@ We found a surprising result, despite most objects being unobservable in the beg
  
  This week's lab also introduced me to a lot of astronomy terms which I have only explored through random youtube tutorials and conveniently forgotten. For example, the angles in the celestial sphere are a bit of a messy struggle for me to visualize, so i need to sit and go over it again...although the lab just asked for basic stuff and no calculations using them... so i was able to do it all on my own. 
 _______
+
+
+CCD
+mirrors correct for aberration 
+
+ph—electron 
+detector controllers
+stefan boltzmann
+flux is inversely proportional to distance
+dust lets red light through so we have data in IR
+pogson’s ratio 
+break a pixel into more and more pixel—resolve to get details in ccd
+over resolving will make the image lose its quality
+differential vs absolute photometry
+how to measure the flux of a round star with square pixels? 
+
+
+_______________________________________________________
+running data throught eh SAO image viewer and learning how to assess the details is a bit challenging, because even though th eprogram itself is easy to use, it is not clear to me how to interpret the differences between the regions of analysis.. Need a stronger astro foundation and need to learn what each of these terms mean. 
+Project proposal--still working on finding something doable. I don't really know yet but i will research on it more over the weekend. 
+___________________________________________________-
