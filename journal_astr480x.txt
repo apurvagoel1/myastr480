@@ -57,3 +57,54 @@ _______________________________________________________
 running data throught eh SAO image viewer and learning how to assess the details is a bit challenging, because even though th eprogram itself is easy to use, it is not clear to me how to interpret the differences between the regions of analysis.. Need a stronger astro foundation and need to learn what each of these terms mean. 
 Project proposal--still working on finding something doable. I don't really know yet but i will research on it more over the weekend. 
 ___________________________________________________-
+for research project--i want to look at archival data for a galaxy in the local group... perghaps ngc 1569 which has 100x the sfr than the milky way, maybe look it its surface gas distribution if i can find the real data
+
+flatness by either side of the overscan--how much light is hitting the detector
+SAOimage viewer : wcs-ra and dec; 
+poisson dist vs guassian dist--- all dist functions->as we get higher numbers, poissons start to look guassian
+in general 65k counts saturation point for the chips we'll look at. 
+photon noise= poisson noise. that dist looks similar to guassian w higher numbers. 
+bias frame= readout from 0 region- no light ...or overscan.
+variations in the ccd will be normal around bias. if bias was 0, we'll have half the values as negative. analog->digital would mean losing quality, and  thus information. spo bias is usually on the order of few hundred counts. bias indicates ccd characteristics. 
+
+header--where the telescope is pointed. based on amplifier amd the information calibration, we position the telescope for ideal angles and brightness. ned tells you the center of the field. the difference in ra and dec are accounted for there.
+
+wash-m filter-mostly broadband filter-avoid skylines--faint background lines.almost never used. filters make a big difference. you lose extra light using a different filter in 1 observation, vs another, based on design. thats why apo image might look different from the flatfits file. because of the optical path design, things may vary.. 
+
+spectrum---emission lines from the galaxy... slit... read up;
+
+pixels--once saturated to full capacity, will get spill over--diffraction spike. sometimes the str is so bright, over exposure can spill photons to the next pixel. readout image. ccds just count the interval rather than when a photon arrived in the image. once ccd has photons on it, they have to be moved to be counted. several places in the pkg might count(not ccd). charge packets shared between 2 pixels. lil voltage alteration changes the potential well 
+
+undersampling is a problem. its better to have a slightly bigger /reasonable size of pixels than a super small on efor this reason. in our phones for example. ///reference--cheap 2k detector///
+
+if exposure short..readout long, then overhead? old ccds had this issue. depends on the gen of detector, and also amplifier functionality
+Quantum efficiency vs Wavelength 
+metal deposited coatings cut down on light reflections getting weird. 
+
+when ccds are warm they have a lot more motion and thus noise. Dark current? scales with time. bias alway stays more or less the same.. extra signals need to be avoided for better accuracy of data. to cold= lower quantum efficiency. sooo its a nice balance.
+
+high UV ---ccds dont work.. high energy electrons just pass right through the coating. material science is also unpredictable. no hope for any vast improvements in quantum efficiency through thatin  the near future , but possibly the closest field to have any hope at all... hah...
+
+
+DN = digital number /... electrons per count.
+
+KEY cfeatures 
+
+CCDS--linear regime. to a point. pixels saturate. gain is an intrinsic measurable value. optical responsive.. materials limits. ccds are cheap.
+
+CMOS vs CCDs. CCDs WIN ALL THE WAYYYYY STRUCTURALLL:Y as many of the continuous photos as we can(lenslit arrays, but limits to that)
+Microchannel Plates are frequently used for UV and XRAYs. photon comes in-- cascade of electrons. Satellites.....amplification.. some benefits, some not. fragile, expensive. 
+
+Signal to Noise ratio:not always better to have more signal! depends on incentive/experiment.
+Shot noise: no way to quanitfy distribution of # of photons coming in over time
+
+read noise
+____________________________________
+About to learn how to reduce data for the first time! 
+
+http://www.astropy.org/astropy-tutorials/plot-catalog.html
+
+http://python4astronomers.github.io/core/numpy_scipy.html
+
+It is a great tutorial. I managed to substract enough data from the original to see the final signal. Now if only I can practice enough to do this in my sleep.. 
+
